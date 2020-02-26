@@ -1,0 +1,10 @@
+*{
+   margin: 0px;
+   align-content: center;
+}
+
+body{ 
+    display: grid;
+    grid-template-areas: 
+    ""
+}
