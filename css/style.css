@@ -1,47 +1,51 @@
 *{
-   margin: 0px;
+   margin: 0;
    align-content: center;
 }
 
 body{ 
     /*overflow: hidden; (on mobile)*/
+    background: white;
 }
 
 section{
-    height: 100%;
+    height: 100vh;
     display: flex;
     text-align: center;
 }
 
 .heading{
     margin: 0 auto;
+    text-align: center;
 }
 
 #mobilekanji{
     position: absolute;
-    width: 138px;
-    height: 368px;
-    left: 5%;
-    top: 20px;
+    justify-content: center;
+    width: 300px;
+    height: auto;
+    top: 5vh;
+    opacity: 50%;
+    
 }
 
 .first_photo{
     position: absolute;
-    border: 2px solid rgba(255, 0, 0, 0.5);
+    border: 0.3vh solid rgba(255, 0, 0, 0.5);
     box-sizing: border-box;
-    border-radius: 40px;
-    width: 216px;
-    height: 216px;
+    border-radius: 20%;
+    width: 200px;
+    height: auto;
 }
 
 #index_photo1{
-    right: 5%;
-    top: 104px;
+    right: 3vw;
+    top: 5vh;
 }
 
 #index_photo2{
-    left: 5%;
-    top: 454px;
+    left: 10vw;
+    top: 70vh;
 }
 
 .first_name{
@@ -49,8 +53,8 @@ section{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 40px;
-    line-height: 46px;
+    font-size: 7vw;
+    line-height: 7vw;
     display: flex;
     align-items: center;
     text-align: center;
@@ -58,10 +62,10 @@ section{
 }
 
 #index_first_name1{
-    width: 30px;
-    height: 416px;
-    right: 15%;
-    top: 320px;
+    width: 5vw;
+    height: 50vh;
+    right: 10vw;
+    top: 30vh;
 }
 
 .last_name{
@@ -69,8 +73,8 @@ section{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 30px;
-    line-height: 39px;
+    font-size: 7vw;
+    line-height: 7vw;
     display: flex;
     align-items: center;
     text-align: center;
@@ -80,45 +84,37 @@ section{
 }
 
 #index_last_name1{
-    width: 22px;
-    height: 416px;
-    right:25%;
-    top: 320px;
+    width: 5vw;
+    height: 60vh;
+    left:15vw;
+    top: 0vh;
 }
 
 .big_photo{
     position: absolute;
     border: 2px solid rgba(255, 0, 0, 0.5);
     box-sizing: border-box;
-    border-radius: 40px;
-    width: 70%;
-    height: 315px;
+    border-radius: 20%;
+    width: 70vw;
+    height: auto;
 }
 
 #index_profile{
-    left: 15%;
-    top: 788px;
+    display: block;
+    left: 0;
+    right: 0;
+    margin: auto;
+    margin-top: 10vh;
 }
 
 .midline{
     align-content: center;
     position: absolute;
-    width: 90%;
+    width: 50%;
     height: 0px;
     left: 5%;
-    top: 100%;
+    top: 100vh;
     border: 1px solid #000000;
-}
-
-.bottomline{
-    align-content: center;
-    position: absolute;
-    width: 90%;
-    height: 0px;
-    left: 5%;
-    top: 260%;
-    border: 1px solid #000000;
-    z-index: 0;
 }
 
 #whole_name{
@@ -126,7 +122,7 @@ section{
     width: 337px;
     height: 52px;
     left: 39px;
-    top: 1128px;
+    top: 110%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -141,26 +137,27 @@ p{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 3vh;
+    line-height: 3vh;
     text-align: left;
     color: #000000;
+    text-emphasis: none;
 }
 
 #bio{
     width: 70%;
-    height: 800px;
     left: 15%;
-    top: 1203px;
+    top: 120vh;
+    margin-bottom: 10vh;
      
 }
 
 .burger_menu{
     position: fixed;
-    height: 70px;
-    width: 70px;
-    bottom: 10px;
-    right: 20px; 
+    height: 10vh;
+    width: 10vh;
+    bottom: 2vh;
+    right: 4vw; 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);  
     cursor: pointer; 
 }
@@ -169,8 +166,8 @@ p{
     display: flex;
     position: fixed;  
     justify-content: center; 
-    width: 60%;
-    height: 50%;
+    width: 0;
+    height: 0;
     background: #FF0000;
     border-radius: 40px 0px 0px 0px;
     bottom: 0;
@@ -292,11 +289,19 @@ video{
 /*Specifikt för Embukai.html:*/
 
 #romania20{
-    left: 17.5%;
-    top: 135px;
+    left: 17.5vw;
+    top: 20vh;
 }
 #bulgaria19{
-    top: 285px;
+    top: 50vh;
+}
+
+#hanami15{
+    top: 80vh;
+}
+
+#stockholm15{
+    top: 110vh;
 }
 
 /*@media only screen and (max-width:600px)*/
